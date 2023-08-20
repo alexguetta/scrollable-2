@@ -1,0 +1,255 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  direction: rtl;
+  --basic-color-1: #9CDDD7;
+  --basic-color-2: #16796F;
+  --basic-color-3: #5271FF;
+  --basic-color-4: #6581FF;
+  --color-used-atm: var(--basic-color-2);
+  background-color: var(--color-used-atm);
+  font-family: Noto Sans Hebrew;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  /*background: linear-gradient(var(--color-used-atm), lightblue,
+                               ,var(--color-used-atm) );*/
+  background: linear-gradient(var(--color-used-atm),lightblue,
+            lightpink,lightblue,var(--color-used-atm));
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo {
+  width: 90%;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+}
+
+.presentation {
+  text-align: center;
+  width: 70%;
+  margin-bottom: 35px;
+  font-size: 270%;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  font-size: 500%;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.picture {
+  width: 60%;
+  border-radius: 30px;
+  box-shadow: 1rem 1rem rgba(255,255,255,0.8);
+}
+
+/*button {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 7%;
+  border-radius: 100px;
+  border: none;
+}*/
+
+.button {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 7%;
+  border-radius: 120px;
+  border: none;
+}
+
+.icons-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 300%;
+  color: var(--color-used-atm);
+}
+
+.link-icon {
+  width: 60%;
+  filter: invert(36%) sepia(92%) saturate(343%) hue-rotate(125deg)
+          brightness(91%) contrast(97%);
+}
+
+#phone-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+#phone-a:active {
+  background-color: lightgrey;
+}
+
+#whatsapp-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+#whatsapp-a:active {
+  background-color: lightgrey;
+}
+
+.link-icon-2 {
+  width: 50%;
+  height: 50%;
+  filter: invert(36%) sepia(92%) saturate(343%) hue-rotate(125deg)
+          brightness(91%) contrast(97%);
+}
+
+.title-reccomend {
+  display: flex;
+  justify-content: center;
+  font-size: 400%;
+}
+
+.name {
+  font-weight: 600;
+}
+
+#big-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+#reccomend-container {
+  opacity: 1;
+  box-shadow: 1rem 1rem rgba(255,255,255,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: white;
+  color: var(--color-used-atm);
+  width: 85%;
+  overflow: hidden;
+}
+
+.middle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#reccomend-text {
+  font-size: 300%;
+  text-align: center;
+  width: 90%; 
+  min-height: 30px;
+}
+
+.whatsapp,
+.telephone {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#whatsapp-button,
+#tel-button {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  border: none;
+}
+
+#whatsapp-img {
+  width: 7rem;
+  height: 7rem;
+  filter: invert(36%) sepia(92%) saturate(343%) hue-rotate(125deg)
+  brightness(91%) contrast(97%);
+}
+
+#tel-img {
+  width: 5rem;
+  height: 5rem;
+  filter: invert(36%) sepia(92%) saturate(343%) hue-rotate(125deg)
+  brightness(91%) contrast(97%);
+}
+
+#whatsapp-button {
+  position: fixed;
+
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  z-index: 2;
+}
+
+#tel-button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+  z-index: 2;
+}
+
+#tel-link:active,
+#whatsapp-link:active {
+
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+#contact {
+  display: inline-block;
+  width: 60%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.title {
+  margin: 2rem 0;
+}
